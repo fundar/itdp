@@ -1,0 +1,90 @@
+/* GENERAL */
+@font-face {  font-family: 'ChaletComprime';  src: url('ChaletComprime-HongKongEigt.otf');  }
+html, body {
+    background: url("../img/main-background.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+	font-family: Helvetica, sans-serif;
+    height: 100%;
+}
+h1{
+	font-family: Helvetica, sans-serif;
+}
+
+
+li{
+	list-style: none;
+}
+div#header{
+	padding: 40px auto 0px auto;
+	padding-top: 40px;
+	min-width:960px;
+	max-width:960px;
+	min-height: 140px;
+	max-height: 140px;
+	margin-bottom: 10px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+a#banner{
+	z-index:0;
+	display: inline-block;
+	position:absolute;
+}
+
+a.logo{
+	z-index: 5;
+	display: inline-block;
+	position:absolute;
+	float:left;
+}
+
+a#logo-itdp{
+	left:100px;
+	top:100px;
+}
+
+a#logo-fundar{
+	left:740px;
+	top:80px;
+}
+
+a#logo-opendata{
+	left:830px;
+	top:80px;
+}
+
+div#wrapper{
+	min-height: 100%;
+	padding-bottom: 80px;
+}
+
+div#footer{
+	background: url("../img/footer.png") repeat-x; 
+    clear:both;
+	min-height: 296px; 
+    margin-top: -296px; /* negative value of footer height */
+	min-width: 1024px;
+	position: relative;	
+	padding-top:20px; 
+} 
+
+div#footer div#content{
+	min-width: 900px;
+	max-width: 900px;
+	margin:auto 
+}
+
+div#footer a#invest{
+	float: right;
+}
+
+div#footer a#more_info{
+	float: left;
+}
+/* END GENERAL*/

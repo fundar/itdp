@@ -1,0 +1,87 @@
+
+div#section{
+  	max-width:802px;
+ 	min-width:802px;
+  	margin:auto;
+  	min-height: 740px;
+  	height: 740px;
+}
+
+div#diputado_info{
+	background: url("../img/marco-diputados.png") no-repeat;
+	min-width: 802px;
+	min-height: 432px;
+	font-family: Helvetica, sans-serif;
+	color:#543018;
+	font-weight: bolder;
+	padding: 35px 50px;
+}
+
+div#diputado_info form{
+	position: relative;
+}
+
+input, textarea{
+	font-family: Helvetica, sans-serif;
+	color:#543018;
+	border:1.8px #B1C800 solid;
+	padding: 5px;
+	font-size: 1.1em;
+	/*color:#543018;*/
+}
+#diputado_info #correo{
+	background: url("../img/field-1.png") repeat;
+	min-width: 230px;
+	margin-right: 30px;
+}
+
+#diputado_info #nombre{
+	min-width: 310px;
+}
+
+#diputado_info #asunto{
+	min-width: 645px;
+	margin-bottom: 7px;
+}
+
+div#frame, textarea{
+	min-height: 220px;
+	border:2px #B1C800 solid;
+	float:left;
+}
+div#frame{
+	margin-right:10px;
+	min-width: 270px;
+}
+textarea{
+	margin-top: 0px;
+	min-width: 426px;
+	padding: 10px;
+	display: block;
+}
+
+input#enviar{
+	background: url("../img/diputado_btn.png") no-repeat;
+	min-width: 242px;
+	min-height: 67px;
+	border:0px;
+	float: right;
+	margin-right: 90px;
+	cursor: pointer;
+}
+
+div#error{
+	min-width: 242px;
+	min-height: 67px;
+	position: absolute;
+	top:315px;
+	left:200px;
+}
+
+div#social{
+	min-width: 242px;
+	min-height: 67px;
+	position: absolute;
+	top:340px;
+	left:200px;
+}

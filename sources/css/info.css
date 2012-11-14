@@ -1,0 +1,52 @@
+
+div#section{
+  	max-width:802px;
+ 	min-width:802px;
+  	margin:auto;
+  	min-height: 940px;
+  	height: 940px;
+}
+
+.title{
+	margin-top:3px;
+	font-size: 1.6em;
+	font-weight: bolder;
+}
+
+#title-video{
+	background: url("../img/titulo-video.png") no-repeat center;
+	color:#F07F13;
+	padding:0px 365px;
+}
+
+#title-download{
+	background: url("../img/titulo-descarga.png") no-repeat center;
+	color:#0071BC;
+	padding:0px 345px;
+}
+
+div#info{
+	background: url("../img/fondo-video.png") no-repeat center;
+	min-width: 638px;
+	min-height: 390px;
+	max-width: 638px;
+	max-height: 390px;
+	margin: auto;
+	padding: 40px 35px 40px 45px;
+}
+
+
+img#download{
+	min-width: 674px;
+	min-height: 114px;
+	margin: 20px 70px;
+	max-width: 674px;
+	max-height: 114px;
+}
+
+iframe{
+	margin:auto;
+}
+
+
+

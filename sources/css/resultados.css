@@ -1,0 +1,55 @@
+h1{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+	margin-left:15px; 
+	color: #F07F13;
+    font-size: 2.5em;
+}
+div#section{
+  	max-width:1000px;
+ 	min-width:1000px;
+  	margin:auto;
+  	min-height: 740px;
+  	height: 740px;
+}
+
+div.chart_area{
+	background: url("../img/fondo-grafica.png") repeat repeat;
+	min-width: 676px;
+	min-height: 303px;
+	float:left;
+	margin-right:10px;
+	padding:10px 0px 80px 8px;
+}
+
+div#chartContainer{
+	
+}
+
+div#acotaciones{
+	background: url("../img/acotaciones-grafica.png") no-repeat;
+	float:left;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	min-width: 190px;
+	min-height: 155px;
+}
+
+div#acotaciones2{
+	background: url("../img/acotaciones-grafica2.png") no-repeat;
+	float:left;
+	min-width: 190px;
+	min-height: 155px;
+	max-width: 190px;
+	max-height: 155px;
+}
+
+form#diputado input#ir{
+	background: url("../img/diputado_btn.png") transparent no-repeat;
+	min-width: 242px;
+	min-height: 67px;
+	max-width: 242px;
+	max-height: 67px;
+	cursor:pointer;
+	border:0px;
+}

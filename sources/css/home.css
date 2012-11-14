@@ -1,0 +1,41 @@
+
+a{
+	position: block;
+}
+
+div#wrapper div#section{
+	overflow:auto;
+    padding-bottom: 296px;
+    min-width:985px;
+	max-width:985px;
+	width:985px;
+	height: auto;
+	margin:0px auto;
+}
+
+p#about{
+	background: url("../img/about-back.png") no-repeat no-repeat;
+	color:#543018;
+	float:left;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: bolder;
+	height: 450px;
+	line-height:1.5em;
+	max-width: 540px;
+	min-height: 450px;
+	padding:60px 30px 20px 30px;
+}
+
+a#infograph{
+	float:left;
+	margin: 10px 0px 20px 0px;
+	min-width: 353px;
+	min-height: 281px;
+	max-width: 353px;
+	max-height: 281px;
+}
+
+a#vote{
+	margin-left:20px;
+}
