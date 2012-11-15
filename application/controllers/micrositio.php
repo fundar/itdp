@@ -32,7 +32,7 @@ class Micrositio extends CI_Controller{
                'edad' => $this->input->post('edad'),
                'zona_met' => $this->input->post('zona_met'),
                'correo' => $this->input->post('correo'),
-               'cod_postal' => $this->input->post('zona_met'),
+               'cod_postal' => $this->input->post('cod_postal'),
 
                'op_esp_publico' => $this->input->post('op_esp_publico'),
                'op_inf_peatonal' => $this->input->post('op_inf_peatonal'),
