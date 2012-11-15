@@ -147,7 +147,7 @@
         }
 
         function mail_test(mail) {
-          var exr = /d[0-9a-z_\-\.]+@[0-9a-z\-\.]+\.[a-z]{2,4}/g;
+          var exr = /[\w-\.]+@([\w-]+\.)+[\w-]{2,4}/g;
           return exr.test(mail);
         }
 
