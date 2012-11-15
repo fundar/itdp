@@ -195,7 +195,7 @@
                                   
                 var select_zona  = ' <select id="zona_met" name="zona_met">'         
                 for (i in zonas_met){
-                      select_zona += '   <option value=' + zonas_met[i] + '>' + zonas_met[i] + '</option>'
+                      select_zona += '   <option value="' + zonas_met[i] + '">' + zonas_met[i] + '</option>'
                     }
                     select_zona += ' </select>'
                 /*********************/
