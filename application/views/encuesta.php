@@ -280,6 +280,8 @@
                   $.post(url , params, function(user_id){
                       if(user_id === "False"){
                           $("div#errores_form").text(user_id);
+                      }else if(user_id === "Duplicate"){
+                           $("div#errores_form").text("Este correo ya realizo la encuesta");
                       }else{
                           rdurl = "<?php echo base_url()?>index.php/micrositio/resultados?id=" + user_id;
                           window.location = rdurl;

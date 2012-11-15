@@ -7,17 +7,24 @@ class Encuesta extends CI_Model{
     }
 
     function registrar($data) {
-        $this->db->insert('encuestas', $data);
+        $query = $this->db->get_where('encuestas', array('correo' => $data['correo']) );
+        
+        if ($query->num_rows() == 0) { 
+            $this->db->insert('encuestas', $data);
 
-        if ($this->db->affected_rows() != 0){
-            return $this->db->insert_id();
-        }else{
-            return "False";
-        }
+            if ($this->db->affected_rows() != 0){
+                return $this->db->insert_id();
+            }else{
+                return "False";
+            }
+        } else{
+            return "Duplicate";
+        } 
     }
 
     function registrar_correo($data) {
         $this->db->insert('correo', $data);
+
 
         if ($this->db->affected_rows() != 0){
             return $this->db->insert_id();
