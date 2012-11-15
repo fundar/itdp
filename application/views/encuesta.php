@@ -250,7 +250,7 @@
                   edad = $(this).find("#edad").val(),
                   correo = $(this).find("#correo").val(),
                   cod_postal = $(this).find("#cod_postal").val(),
-                  zona_met = $(this).find("#cod_postal").val(),
+                  zona_met = $(this).find("#zona_met").val(),
 
                   op_esp_publico= $(this).find("#op_esp_publico").val(),
                   op_inf_peatonal= $(this).find("#op_inf_peatonal").val(),
