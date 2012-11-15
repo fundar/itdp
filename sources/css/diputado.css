@@ -85,3 +85,30 @@ div#social{
 	top:340px;
 	left:200px;
 }
+
+div#output header#branding, div#output div#posts-bar, 
+div#output footer#colophon, div#output div#floating-bar-container{
+	display: none;
+}
+
+div#output div#main-wrapper{
+	max-width: 900px;
+}
+
+div#output div#main{
+	max-width: 900px;
+}
+
+div#output .entry-content{
+	max-width: 900px;
+
+}
+
+div#output #container{
+	width: 900px;
+}
+
+#widget #show-profile h2 {
+color: red;
+cursor: pointer;
+}

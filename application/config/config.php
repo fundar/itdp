@@ -14,8 +14,8 @@
 |
 */
 
-$config['base_url']	= 'http://localhost/itdp';
 $config['base_url']	= 'http://mexico.itdp.org/micrositio';
+$config['base_url']	= 'http://localhost/itdpmx';
 // http://localhost/itdp/sources/img/banner.png
 
 /*

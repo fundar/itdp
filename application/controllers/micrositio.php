@@ -14,6 +14,10 @@ class Micrositio extends CI_Controller{
 		$this -> load -> view('encuesta');
 	}
 
+	public function test(){				
+		$this -> load -> view('test');
+	}
+
 	public function mandar_encuesta(){
 		if( $this->input->post('correo') AND $this->input->post('nombre') AND 
 			$this->input->post('edad') AND $this->input->post('sexo') AND 

@@ -145,18 +145,17 @@
            
           //}
         }
-/*
+
         function mail_test(mail) {
-          var exr = "/^[0-9a-z_\-\.]+@[0-9a-z\-\.]+\.[a-z]{2,4}$/i";
+          var exr = /d[0-9a-z_\-\.]+@[0-9a-z\-\.]+\.[a-z]{2,4}/g;
           return exr.test(mail);
         }
-*/
-/*
+
         function cp_test(cp) {
-          var exr = /(^[0-9]{4,5}$/;
+          var exr = /d[0-9]{4,5}/g;
           return exr.test(cp);
         }
- */            
+        
         $(document).ready(function(){
           $('li#votar_btn a').live("click", function(){
             $("#errores").html(""); 
@@ -262,7 +261,7 @@
               if( nombre == "" || sexo == "" || edad == "" || correo == "" || cod_postal == ""){
                   $("div#errores_form").html("Todos los campos son requeridos");
               }else if(!mail_test(correo)){
-                  $("div#errores_form").html("  Correo Inválido")
+                  $("div#errores_form").html("Correo Inválido")
               }else{
                   params = { "nombre":nombre, 
                              "sexo":sexo, 
