@@ -4,7 +4,7 @@
 
   <div id="wrapper">
     <div id="section">
-      <h1>Arrastra tus monedas de acuerdo a tu elección para invertir</h1>
+      <h1><img src="<?php echo base_url()?>sources/img/h1_vote.png" alt="h1_vote" width="" height="" /></h1>
 
               <ul id="coin_place">
                 <li id="coin-33">
@@ -224,8 +224,8 @@
                     form += '     <div id="field-4" class="field" >' + select_zona + ' </div> '
                     form += '  <label for="sexo">Sexo: </label>' 
                     form += '     <div id="field-5" class="field" >' + select_sexo + ' </div> '
-                    form += '  <label for="cod_postal">Código Postal: </label> '
-                    form += '     <div id="field-6" class="field" > <input type="text" id="cod_postal" name="cod_postal"> </div>'
+                    /*form += '  <label for="cod_postal">Código Postal: </label> '
+                    form += '     <div id="field-6" class="field" > <input type="text" id="cod_postal" name="cod_postal"> </div>'*/
                     form += '  <input id="enviar" type="submit" value="">'
                     form += '  <div id="errores_form"></div>'
                     form += ' </form>'
@@ -249,7 +249,7 @@
                   sexo = $(this).find("#sexo").val(),
                   edad = $(this).find("#edad").val(),
                   correo = $(this).find("#correo").val(),
-                  cod_postal = $(this).find("#cod_postal").val(),
+                  //cod_postal = $(this).find("#cod_postal").val(),
                   zona_met = $(this).find("#zona_met").val(),
 
                   op_esp_publico= $(this).find("#op_esp_publico").val(),
@@ -258,7 +258,7 @@
                   op_inf_coche= $(this).find("#op_inf_coche").val(),
                   op_tran_publico= $(this).find("#op_tran_publico").val();
 
-              if( nombre == "" || sexo == "" || edad == "" || correo == "" || cod_postal == ""){
+              if( nombre == "" || sexo == "" || edad == "" || correo == ""){
                   $("div#errores_form").html("Todos los campos son requeridos");
               }else if(!mail_test(correo)){
                   $("div#errores_form").html("Correo Inválido")
@@ -269,7 +269,6 @@
                              "correo":correo, 
                              "zona_met":zona_met, 
                              
-                             "cod_postal":cod_postal, 
                              "op_esp_publico":op_esp_publico,
                              "op_inf_peatonal":op_inf_peatonal, 
                              "op_inf_ciclista":op_inf_ciclista,

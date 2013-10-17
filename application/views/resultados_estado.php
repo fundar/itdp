@@ -2,7 +2,31 @@
   <link rel="stylesheet" href="<?php echo base_url()?>sources/css/resultados.css">
   <div id="wrapper">
     <div id="section">
-      <h1>Resultados de <?php echo $estado; ?></h1>
+      <h1>Resultados de 
+		<?php 
+		switch ($estado) {
+			case "Distrito-Federal":
+				echo "Distrito Federal";
+				break;
+			case "Estado-de-México":
+				echo "Estado de México";
+				break;
+			case "Nuevo-Leon":
+				echo "Monterrey";
+				break;
+			case "cd-juarez":
+				echo "CD. Juárez";
+				break;
+			case "la-laguna":
+				echo "La Laguna";
+				break;
+			default:
+				echo $estado;
+		}
+
+		?>
+
+      </h1>
       <div class="chart_area" id="chartContainer" >
         <div></div>
       </div>
@@ -15,83 +39,151 @@
 
 <?php
 if ($estado == "Aguascalientes"){
-  $gob_inf_coche = 89.7;
-  $gob_esp_publico = 0;
-  $gob_inf_ciclista = 0.5;
-  $gob_inf_peatonal = 9.6;
-  $gob_tran_publico = 0.1;
+  $gob_inf_coche    = 82.1;
+  $gob_tran_publico = 2.3;
+  $gob_inf_ciclista = 0.6;
+  $gob_esp_publico  = 15;
+  $gob_inf_peatonal = 0;
 }
 if ($estado == "Colima"){
- $gob_inf_coche = 61.5;
-  $gob_esp_publico = 0;
+ $gob_inf_coche     = 50.5;
+  $gob_tran_publico = 0;
   $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 27.8;
-  $gob_tran_publico = 10.7;
+  $gob_esp_publico  = 0;
+  $gob_inf_peatonal = 49.5;
 }
 if ($estado == "Distrito-Federal"){
-  $gob_inf_coche = 52;
-  $gob_esp_publico = 13;
-  $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 28;
-  $gob_tran_publico = 6;
+  $gob_inf_coche    = 10;
+  $gob_tran_publico = 7.3;
+  $gob_inf_ciclista = 2.1;
+  $gob_esp_publico  = 12.5;
+  $gob_inf_peatonal = 5.2;
 }
 if ($estado == "Estado-de-México"){
-  $gob_inf_coche = 70.9;
-  $gob_esp_publico = 26.8;
+  $gob_inf_coche    = 76.2;
+  $gob_tran_publico = 18.3;
   $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 1.1;
-  $gob_tran_publico = 1.2;
+  $gob_esp_publico  = 0.9;
+  $gob_inf_peatonal = 4.5;
 }
 if ($estado == "Guanajuato"){
-  $gob_inf_coche = 70.9;
-  $gob_esp_publico = 26.8;
-  $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 1.1;
-  $gob_tran_publico = 1.2;
+  $gob_inf_coche   = 87.7;
+  $gob_tran_publico = 0;
+  $gob_inf_ciclista = 0.4;
+  $gob_esp_publico  = 10.9;
+  $gob_inf_peatonal = 0.9;
 }
 if ($estado == "Guadalajara"){
-  $gob_inf_coche = 91.6;
-  $gob_esp_publico = 0;
-  $gob_inf_ciclista = 1.6;
-  $gob_inf_peatonal = 4.7;
-  $gob_tran_publico = 2.1;
-}
-if ($estado == "Nuevo-León"){
- $gob_inf_coche = 83;
-  $gob_esp_publico = 1.5;
+  $gob_inf_coche    = 82.8;
+  $gob_tran_publico = 1.7;
   $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 14.3;
-  $gob_tran_publico = 1.2;
+  $gob_esp_publico  = 6.5;
+  $gob_inf_peatonal = 9.0;
+}
+if ($estado == "Nuevo-Leon"){
+  $gob_inf_coche    = 80.1;
+  $gob_tran_publico = 5.1;
+  $gob_inf_ciclista = 0;
+  $gob_esp_publico  = 14.3;
+  $gob_inf_peatonal = 0.5;
 }
 if ($estado == "Puebla"){
-  $gob_inf_coche = 82.3;
-  $gob_esp_publico = 15.6;
+  $gob_inf_coche    = 76.1;
+  $gob_tran_publico = 0.1;
   $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 1.6;
-  $gob_tran_publico = 0.6;
+  $gob_esp_publico  = 23.5;
+  $gob_inf_peatonal = 0.4;
 }
 if ($estado == "Querétaro"){
- $gob_inf_coche = 77.6;
-  $gob_esp_publico = 0;
-  $gob_inf_ciclista = 0.6;
-  $gob_inf_peatonal = 5.6;
-  $gob_tran_publico = 16.2;
+ $gob_inf_coche     = 70.3;
+  $gob_esp_publico  = 6.7;
+  $gob_inf_ciclista = 1.4;
+  $gob_inf_peatonal = 5.0;
+  $gob_tran_publico = 16.6;
 }
 if ($estado == "Veracruz"){
-  $gob_inf_coche = 56.8;
-  $gob_esp_publico = 0;
+  $gob_inf_coche    = 45.8;
+  $gob_tran_publico = 22.6;
   $gob_inf_ciclista = 0;
-  $gob_inf_peatonal = 15.2;
-  $gob_tran_publico = 27.9;
+  $gob_esp_publico  = 1.9;
+  $gob_inf_peatonal = 26.7;
+}
+
+/***********  Nuevos  ***********/
+
+if ($estado == "Tuxtla"){
+  $gob_inf_coche    = 83.9;
+  $gob_tran_publico = 0;
+  $gob_inf_ciclista = 0;
+  $gob_esp_publico  = 16.1;
+  $gob_inf_peatonal = 0;
+}
+
+if ($estado == "cd-juarez"){
+  $gob_inf_coche    = 98.6;
+  $gob_tran_publico = 0;
+  $gob_inf_ciclista = 0;
+  $gob_esp_publico  = 1.0;
+  $gob_inf_peatonal = 0.4;
+}
+
+if ($estado == "Tijuana"){
+  $gob_inf_coche    = 83.8;
+  $gob_tran_publico = 1.9;
+  $gob_inf_ciclista = 0;
+  $gob_esp_publico  = 12.9;
+  $gob_inf_peatonal = 1.4;
+}
+
+if ($estado == "Toluca"){
+  $gob_inf_coche    = 96.2;
+  $gob_tran_publico = 0;
+  $gob_inf_ciclista = 0.3;
+  $gob_esp_publico  = 0;
+  $gob_inf_peatonal = 3.4;
+}
+
+if ($estado == "Mérida"){
+  $gob_inf_coche    = 67.2;
+  $gob_tran_publico = 0;
+  $gob_inf_ciclista = 8.8;
+  $gob_esp_publico  = 7.4;
+  $gob_inf_peatonal = 16.7;
+}
+
+if ($estado == "la-laguna"){
+  $gob_inf_coche    = 92.4;
+  $gob_tran_publico = 1.5;
+  $gob_inf_ciclista = 0;
+  $gob_esp_publico  = 5.8;
+  $gob_inf_peatonal = 0.2;
+}
+
+if ($estado == "Hermosillo"){
+  $gob_inf_coche    = 87.5;
+  $gob_tran_publico = 3.0;
+  $gob_inf_ciclista = 0;
+  $gob_esp_publico  = 9.5;
+  $gob_inf_peatonal = 0;
+}
+
+if ($estado == "Oaxaca"){
+  $gob_inf_coche    = 83.9;
+  $gob_tran_publico = 4.4;
+  $gob_inf_ciclista = 1.1;
+  $gob_esp_publico  = 8.9;
+  $gob_inf_peatonal = 1.7;
 }
 
 
+
+/*
 $avg_esp_publico = 17;
 $avg_inf_peatonal = 13;
 $avg_inf_ciclista = 7;
 $avg_inf_coche = 33;
 $avg_tran_publico = 20;
-
+*/
 $str_esp_pub = "Espacio Público";
 $str_inf_pea = "Infraestructura Peatonal";
 $str_inf_cic = "Infraestructura Ciclista";

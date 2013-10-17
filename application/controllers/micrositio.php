@@ -21,7 +21,7 @@ class Micrositio extends CI_Controller{
 	public function mandar_encuesta(){
 		if( $this->input->post('correo') AND $this->input->post('nombre') AND 
 			$this->input->post('edad') AND $this->input->post('sexo') AND 
-			$this->input->post('cod_postal') AND $this->input->post('op_esp_publico') AND
+			$this->input->post('op_esp_publico') AND
 			$this->input->post('op_inf_peatonal') AND $this->input->post('op_inf_ciclista')AND 
 			$this->input->post('op_inf_coche') AND $this->input->post('op_tran_publico') AND
 			$this->input->post('zona_met')){ 
@@ -32,7 +32,7 @@ class Micrositio extends CI_Controller{
                'edad' => $this->input->post('edad'),
                'zona_met' => $this->input->post('zona_met'),
                'correo' => $this->input->post('correo'),
-               'cod_postal' => $this->input->post('cod_postal'),
+               'cod_postal' => 0,
 
                'op_esp_publico' => $this->input->post('op_esp_publico'),
                'op_inf_peatonal' => $this->input->post('op_inf_peatonal'),
@@ -88,7 +88,7 @@ class Micrositio extends CI_Controller{
 
 		}elseif ($this->input->get('estado') ) {
 			$data['estado'] = $this->input->get('estado');
-			$resp =	$this->encuesta->estado($data);
+			$resp =	$this->encuesta->promedio($data);
 
 			function redondear($valor) { 
 			   $float_redondeado=round($valor * 100) / 100; 
@@ -131,4 +131,5 @@ class Micrositio extends CI_Controller{
 	public function diputado(){
 		$this -> load -> view('diputado');
 	}
+
 }

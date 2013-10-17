@@ -9,8 +9,8 @@ div#section{
   	max-width:1000px;
  	min-width:1000px;
   	margin:auto;
-  	min-height: 740px;
-  	height: 740px;
+  	min-height: 600px;
+  	height: 600px;
 }
 
 div.chart_area{
@@ -52,4 +52,12 @@ form#diputado input#ir{
 	max-height: 67px;
 	cursor:pointer;
 	border:0px;
+}
+
+div.total{
+	margin-top: -40px;
+	margin-right:35px;
+	font-size: 1.3em;
+	color:#000;
+	float:right;
 }

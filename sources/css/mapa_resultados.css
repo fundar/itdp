@@ -12,8 +12,7 @@ div#map_area{
 	background: url("../img/marco-mapa.png") no-repeat;
 	min-width: 802px;
 	min-height: 432px;
-	padding-left: 50px;
-	padding-top: 20px;
+	padding-left: 17px;
 }
 
 .Estado_View{
@@ -70,3 +69,14 @@ a#lnk_federales{
 	right:50px;
 	top:380px;
 }
+
+#map {    
+	height: 412px;
+    margin-top: 11px;
+    position: absolute;
+    width: 776px;
+}
+
+.name-row { color:#DE8625; }
+
+.leaflet-control-attribution { display:none; }

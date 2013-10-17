@@ -1,15 +1,14 @@
 /* GENERAL */
 @font-face {  font-family: 'ChaletComprime';  src: url('ChaletComprime-HongKongEigt.otf');  }
+
 html, body {
-    background: url("../img/main-background.jpg") no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-	font-family: Helvetica, sans-serif;
-    height: 100%;
+
+color: white;
+
+background: #F7EFC5 url(../img/main-background.png) repeat-x top center; /* Old browsers */
+height: 100%;
 }
+
 h1{
 	font-family: Helvetica, sans-serif;
 }
@@ -25,10 +24,9 @@ div#header{
 	max-width:960px;
 	min-height: 140px;
 	max-height: 140px;
-	margin-bottom: 10px;
 	position: relative;
 	margin: auto;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 a#banner{
@@ -49,6 +47,11 @@ a#logo-itdp{
 	top:100px;
 }
 
+a#logo-embajada{
+	left:0px;
+	top:0px;
+}
+
 a#logo-fundar{
 	left:740px;
 	top:80px;
@@ -60,15 +63,16 @@ a#logo-opendata{
 }
 
 div#wrapper{
-	min-height: 100%;
 	padding-bottom: 80px;
+	overflow: hidden;
 }
 
 div#footer{
-	background: url("../img/footer.png") repeat-x; 
+	background: #B1C800 url("../img/footer.png") repeat-x; 
+	border-top:3px dotted #DC8526;
     clear:both;
-	min-height: 296px; 
-    margin-top: -296px; /* negative value of footer height */
+	min-height: 276px; 
+    margin-top: -150px; /* negative value of footer height */
 	min-width: 1024px;
 	position: relative;	
 	padding-top:20px; 

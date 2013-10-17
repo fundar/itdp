@@ -4,11 +4,11 @@
   <link rel="stylesheet" href="<?php echo base_url()?>sources/css/resultados.css">
   <div id="wrapper">
     <div id="section">
-      <h1>Resultados Federales</h1>
+      <h1><img src="<?php echo base_url()?>sources/img/federales-h1.png" alt="Resultados Federales" width="" height="" /></h1>
       <div class="chart_area" id="chartContainer" >
         <div></div>
       </div>
-      <div id="acotaciones">
+      <div id="acotaciones2">
        
       </div>
     </div>
@@ -18,11 +18,12 @@
   <script type="text/javascript" src="<?php echo base_url()?>sources/js/amstock.js" ></script>
 
 <?php
-$gob_esp_publico = 10.8;
-$gob_inf_peatonal = 6.37;
-$gob_inf_ciclista = 0.36;
-$gob_inf_coche = 76.15;
-$gob_tran_publico = 6.22;
+
+$gob_inf_coche    = 64.6;
+$gob_tran_publico = 21.7;
+$gob_inf_ciclista = 0.8;
+$gob_esp_publico  = 8.7;
+$gob_inf_peatonal = 4.2;
 
 
 $str_esp_pub = "Espacio Público";

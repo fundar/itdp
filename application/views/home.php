@@ -4,24 +4,12 @@
 
 	<div id="wrapper">
 		<div id="section">
-			<p id="about">
-				Todos los días tenemos que transladarnos ya sea 
-				por estudios, trabajo o simplemente por 
-				recreación. Sin embargo, la preferencia que se 
-				le ha dado al automóvil privado en nuestras 
-				ciudades, ha traído graves consecuencias para 
-				todos. Por eso, es hora de que los ciudadanos
-				propongamos donde y en que queremos que 
-				nuestros impuestos sean invertidos y con ello,
-				proponer ciudades donde podamos caminar 
-				con gusto, pedalear mientras disfrutamos del
-				trayecto, tomar un transporte público de 
-				calidad y convivir con agrado en nuestros 
-				espacios públicos
-			</p>
-			<a id="infograph" class="group1" href="<?php echo base_url()?>sources/img/info/infograph.png">
-				<img src="<?php echo base_url()?>sources/img/infograph.png" alt="infografia-mobilidad">
+			<a id="infograph" class="group1" href="<?php echo base_url()?>sources/img/info/infograph.jpg">
+				
 			</a>
+			<p id="about">
+				Es hora de que los ciudadanos propongamos ciudades donde podamos caminar con gusto, pedalear con seguridad, tomar un transporte público de calidad y convivir en espacios públicos agradables.
+			</p>
 			<a id="vote" href="<?php echo base_url()?>index.php/micrositio/encuesta">
 				<img src="<?php echo base_url()?>sources/img/inv_lnk.png" alt="mobilidad-urbana">	
 			</a>

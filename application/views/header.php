@@ -11,6 +11,11 @@
 		<a id="banner" href="<?php echo base_url()?>index.php/micrositio/	">
 			<img src="<?php echo base_url()?>sources/img/banner.png" alt="mobilidad-urbana">
 		</a>
+		
+		<a id="logo-embajada" href="http://ukinmexico.fco.gov.uk/es/">
+			<img src="<?php echo base_url()?>sources/img/embajada.png" alt="embajada">
+		</a>
+
 		<a id="logo-itdp" class="logo" href="http://itdp.mx">
 			<img src="<?php echo base_url()?>sources/img/itdp-logo.png" alt="logo-itdp">
 		</a>
@@ -21,3 +26,4 @@
 			<img src="<?php echo base_url()?>sources/img/opendata-logo.png" alt="logo-opendata">
 		</a>
 	</div>
+	

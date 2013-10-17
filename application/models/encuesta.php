@@ -68,6 +68,87 @@ class Encuesta extends CI_Model{
         $this->db->select_avg('op_tran_publico', 'avg_tran_publico');
         $query = $this->db->get('encuestas');
 
+
+        if ($query->num_rows() > 0){
+            $row = $query->row_array();
+            return $row;
+        }
+    }
+
+    function reporte($zona_met, $sexo, $edad){
+        $this->db->select_avg('op_esp_publico', 'esp_publico');
+        $this->db->select_avg('op_inf_peatonal', 'inf_peatonal');
+        $this->db->select_avg('op_inf_ciclista', 'inf_ciclista');
+        $this->db->select_avg('op_inf_coche', 'inf_coche');
+        $this->db->select_avg('op_tran_publico', 'tran_publico');
+
+        if($zona_met != "" and $zona_met != "Todas" ){
+            $this->db->where('zona_met', $zona_met);
+        }
+
+        if($zona_met != "" and $sexo != "Ambos"){
+            $this->db->where('sexo', $sexo);
+        }
+
+        //$where = "nombre='Jose' AND estado='jefe' OR estado='activo'";
+        //$this->db->where($where);
+
+        switch ($edad) {
+        case "hasta18":
+            $this->db->where('edad <= 18');
+            break;
+        case "hasta40":
+            $this->db->where('edad > 18 AND edad < 40');
+            break;
+        case "hasta60":
+            $this->db->where('edad > 18 AND edad < 60');
+            break;
+        case "hasta80":
+            $this->db->where('edad > 18 AND edad < 80');
+            break;
+        case "mayor80":
+            $this->db->where('edad > 80');
+            break;
+        }
+
+        $query = $this->db->get('encuestas');
+
+        if ($query->num_rows() > 0){
+            $row = $query->row_array();
+            return $row;
+        }
+    }
+
+    function reporte_count($zona_met, $sexo, $edad){
+        $this->db->select('COUNT(*) AS total',FALSE);
+        
+        if($zona_met != "" and $zona_met != "Todas" ){
+            $this->db->where('zona_met', $zona_met);
+        }
+
+        if($zona_met != "" and $sexo != "Ambos"){
+            $this->db->where('sexo', $sexo);
+        }
+        switch ($edad) {
+        case "hasta18":
+            $this->db->where('edad <= 18');
+            break;
+        case "hasta40":
+            $this->db->where('edad > 18 AND edad < 40');
+            break;
+        case "hasta60":
+            $this->db->where('edad > 18 AND edad < 60');
+            break;
+        case "hasta80":
+            $this->db->where('edad > 18 AND edad < 80');
+            break;
+        case "mayor80":
+            $this->db->where('edad > 80');
+            break;
+        }
+
+        $query = $this->db->get('encuestas');
+
         if ($query->num_rows() > 0){
             $row = $query->row_array();
             return $row;

@@ -1,11 +1,17 @@
-
+@font-face {
+	font-family: 'Conv_ChaletComprime-CologneSixty';
+	src: url('../fonts_home/ChaletComprime-CologneSixty.eot');
+	src: local('☺'), url('fonts_home/ChaletComprime-CologneSixty.woff') format('woff'), url('fonts_home/ChaletComprime-CologneSixty.ttf') format('truetype'), url('fonts_home/ChaletComprime-CologneSixty.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 a{
 	position: block;
 }
 
 div#wrapper div#section{
 	overflow:auto;
-    padding-bottom: 296px;
+    padding-bottom: 80px;
     min-width:985px;
 	max-width:985px;
 	width:985px;
@@ -14,28 +20,40 @@ div#wrapper div#section{
 }
 
 p#about{
-	background: url("../img/about-back.png") no-repeat no-repeat;
+	background: url("../img/about_bg.png") no-repeat no-repeat;
 	color:#543018;
 	float:left;
-	font-family: Helvetica, sans-serif;
-	font-size: 1.3em;
-	font-weight: bolder;
-	height: 450px;
-	line-height:1.5em;
-	max-width: 540px;
-	min-height: 450px;
-	padding:60px 30px 20px 30px;
+	font-size: 1.95em;
+	height: 290px;
+	line-height:1.2em;
+	max-width: 324px;
+	min-height: 290px;
+	padding:15px 30px 20px 30px;
+	margin: 10px 0 0 0;
+	font-family: 'Conv_ChaletComprime-CologneSixty';
+	font-weight: normal;
+	font-style: normal;
 }
 
 a#infograph{
+	background: url(../img/infografia_home.png);
 	float:left;
-	margin: 10px 0px 20px 0px;
-	min-width: 353px;
-	min-height: 281px;
-	max-width: 353px;
-	max-height: 281px;
+	margin: 0 0px 20px 0px;
+	min-width: 590px;
+	min-height: 471px;
+	max-width: 590px;
+	max-height: 471px;
+	display: block;
 }
-
+#infograph:hover{
+	background: url(../img/infografia_home_h.png);
+}
 a#vote{
-	margin-left:20px;
+	margin-left:43px;
+	display:block;
+	float: left;
+}
+#info_hover{
+	display: none;
+	position: absolute;
 }

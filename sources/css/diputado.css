@@ -1,84 +1,84 @@
-
 div#section{
-  	max-width:802px;
- 	min-width:802px;
-  	margin:auto;
-  	min-height: 740px;
-  	height: 740px;
+  max-width:950px;
+  min-width:950px;
+  margin:auto;
+  min-height: 840px;
+  height: 840px;
 }
 
 div#diputado_info{
-	background: url("../img/marco-diputados.png") no-repeat;
-	min-width: 802px;
-	min-height: 432px;
+	min-width: 1000px;
+	min-height: 840px;
 	font-family: Helvetica, sans-serif;
 	color:#543018;
 	font-weight: bolder;
-	padding: 35px 50px;
 }
 
-div#diputado_info form{
-	position: relative;
+ul#sidebar{
+	max-width: 1000px;
+	min-width: 1000px;
+	min-height: 100px;
+	padding-top: 30px;
+	display:block;
+	//float:left;
 }
 
-input, textarea{
-	font-family: Helvetica, sans-serif;
-	color:#543018;
-	border:1.8px #B1C800 solid;
-	padding: 5px;
-	font-size: 1.1em;
-	/*color:#543018;*/
-}
-#diputado_info #correo{
-	background: url("../img/field-1.png") repeat;
-	min-width: 230px;
-	margin-right: 30px;
-}
-
-#diputado_info #nombre{
-	min-width: 310px;
-}
-
-#diputado_info #asunto{
-	min-width: 645px;
-	margin-bottom: 7px;
-}
-
-div#frame, textarea{
-	min-height: 220px;
-	border:2px #B1C800 solid;
+ul#sidebar li {
+	line-height:1.6em;
 	float:left;
-}
-div#frame{
-	margin-right:10px;
-	min-width: 270px;
-}
-textarea{
-	margin-top: 0px;
-	min-width: 426px;
-	padding: 10px;
-	display: block;
+	padding-right:30px; 
+	max-width: 200px;
 }
 
-input#enviar{
-	background: url("../img/diputado_btn.png") no-repeat;
-	min-width: 242px;
-	min-height: 67px;
-	border:0px;
-	float: right;
-	margin-right: 90px;
-	cursor: pointer;
+
+ul#sidebar li#p3 {
+	max-width: 520px;
+	padding-right:0px; 
 }
 
-div#error{
-	min-width: 242px;
-	min-height: 67px;
-	position: absolute;
-	top:315px;
-	left:200px;
+ul#sidebar li span#num{
+	font-size: 3.5em;
+	float:left; 
+	margin:0px 10px 5px 5px;
+	padding: 20px;
+	width: 30px;
+   	height: 30px;
+   	-moz-border-radius: 50px; 
+   	-webkit-border-radius: 50px; 
+   	border-radius: 50px;
+   	color:black;
+}
+ul#sidebar li#p1 span#num{
+   	background: #f79420; /*naranja*/
+}
+
+ul#sidebar li#p2 span#num{
+   	background: #FFFF00; /*amarillo*/
+}
+
+ul#sidebar li#p3 span#num{
+   	background: #80FF00; /*verde*/
+}
+
+ul#sidebar li span#leyenda{
+	color:italic;
+}
+
+ul#sidebar li.step{
+	display:none;
+}
+
+iframe#curul{
+	max-width: 950px;
+	min-width: 950px;
+	max-height: 600px;
+	min-height: 600px;
+	float:left;
+	margin-bottom: 50px;
 }
 
 div#social{
+	float:left;
 	min-width: 242px;
 	min-height: 67px;
 	position: absolute;
@@ -86,29 +86,7 @@ div#social{
 	left:200px;
 }
 
-div#output header#branding, div#output div#posts-bar, 
-div#output footer#colophon, div#output div#floating-bar-container{
-	display: none;
+div#footer{¨
+  	margin-top:-30px;
 }
 
-div#output div#main-wrapper{
-	max-width: 900px;
-}
-
-div#output div#main{
-	max-width: 900px;
-}
-
-div#output .entry-content{
-	max-width: 900px;
-
-}
-
-div#output #container{
-	width: 900px;
-}
-
-#widget #show-profile h2 {
-color: red;
-cursor: pointer;
-}

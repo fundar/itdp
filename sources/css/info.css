@@ -3,8 +3,8 @@ div#section{
   	max-width:802px;
  	min-width:802px;
   	margin:auto;
-  	min-height: 940px;
-  	height: 940px;
+  	min-height: 780px;
+  	height: 780px;
 }
 
 .title{
@@ -27,15 +27,9 @@ div#section{
 
 div#info{
 	background: url("../img/fondo-video.png") no-repeat center;
-	min-width: 638px;
-	min-height: 390px;
-	max-width: 638px;
-	max-height: 390px;
-	margin: auto;
-	padding: 40px 35px 40px 45px;
-}
-
-
+	width: 638px;
+	height: 390px;
+	margin: 40px auto;}
 img#download{
 	min-width: 674px;
 	min-height: 114px;
@@ -45,7 +39,7 @@ img#download{
 }
 
 iframe{
-	margin:auto;
+	margin:40px 0 0 39px;
 }
 
 

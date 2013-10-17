@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="<?php echo base_url()?>sources/css/resultados.css">
   <div id="wrapper">
     <div id="section">
-      <h1>Resultados </h1>
+      <h1><img src="<?php echo base_url()?>sources/img/resultados-h1.png" alt="resultados-h1" width="" height="" /></h1>
       <div class="chart_area" id="chartContainer" >
         <div >
             
@@ -23,11 +23,11 @@
   <script type="text/javascript" src="<?php echo base_url()?>sources/js/amstock.js" ></script>
 
 <?php
-$gob_esp_publico = 10.8;
-$gob_inf_peatonal = 6.37;
-$gob_inf_ciclista = 0.36;
-$gob_inf_coche = 76.15;
-$gob_tran_publico = 6.22;
+$gob_inf_coche = 77.4;
+$gob_tran_publico = 11.1;
+$gob_inf_ciclista = 0.4;
+$gob_esp_publico = 7.8;
+$gob_inf_peatonal = 3.3;
 
 
 $str_esp_pub = "Espacio Público";
@@ -81,6 +81,7 @@ echo <<<EOF
 
         var graph = new AmCharts.AmGraph();
             graph.valueField = "porcentaje"
+            graph.labelText = "[[porcentaje]]%";
             graph.type = "column";
             graph.balloonText = "[[concepto]]: [[porcentaje]]%";
             graph.lineAlpha = 0;
