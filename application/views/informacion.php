@@ -5,7 +5,7 @@
   	  <h1 id="title-video" class="title"> <img src="<?php echo base_url()?>sources/img/video-h1.png" alt="Video"/></h1>
 
       <div id="info">
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/6TI2cMMnVd0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/YZaOlH59mqo" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <h1 id="title-download" class="title"> <img src="<?php echo base_url()?>sources/img/descarga-h1.png" alt="Descarga" width="" height="" /></h1>
